@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+html {
+    font-size: 62.5%;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 156, 32);
+    height: 100vh;
+}
+
+#calculator {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 5px 5px 15px black;
+}
+
+#calculator-display {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px;
+    width: 100%;
+    height: 65px;
+    color: white;
+}
+#calculator-display h1 {
+    font-size: 2rem;
+    text-align: right;
+    transition: 1s;
+}
+#preview-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+}
+#calculator-display #preview-container p {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+#calculator-display #preview-container span {
+    font-size: 1rem;
+    margin: 5px;
+    text-align: right;
+    transition: 1s;
+}
+
+#calculator-keys {
+    display: grid;
+    border-radius: 10px;
+    gap: 1px;
+    grid-template-columns: auto auto auto auto / auto auto auto auto auto;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px); */
+}
+#calculator-keys button {
+    border: 0;
+    width: 65px;
+    height: 50px;
+}
+#calculator-keys #clear {
+    width: auto;
+    grid-column: 3 / 3;
+    grid-row: 1;
+}
+#calculator-keys #delete {
+    width: auto;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+#calculator-keys #key-resolve {
+    width: auto;
+    background-color: rgb(255, 166, 0);
+    transition: 450ms;
+    height: 100%;
+    grid-column: 3 / span 2;
+}
+#calculator-keys #key-resolve:hover {
+    background-color: rgb(233, 152, 3);
+}
+
+#calculator-keys .key-clear {
+    background-color: rgb(218, 218, 218);
+    transition: 250ms;
+}
+#calculator-keys .key-clear:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+#calculator-keys .key-operator {
+    grid-column: 4;
+    background-color: rgb(221, 226, 230);
+    transition: 250ms;
+}
+#calculator-keys .key-operator:hover {
+    background-color: rgb(197, 202, 206);
+}
+
+#calculator-keys .key-number {
+    background-color: rgb(252, 252, 252);
+    transition: 250ms;
+}
+#calculator-keys .key-number:hover {
+    background-color: rgb(235, 236, 238);
+}
+
+#calculator-keys .number-9 {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+#calculator-keys .number-8 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+#calculator-keys .number-7 {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+#calculator-keys .number-6 {
+    grid-column: 3 / 4;
+    grid-row: 3;
+}
+#calculator-keys .number-5 {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+#calculator-keys .number-4 {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+#calculator-keys .number-3 {
+    grid-column: 3 / 4;
+    grid-row: 4;
+}
+#calculator-keys .number-2 {
+    grid-column: 2 / 3;
+    grid-row: 4;
+}
+#calculator-keys .number-1 {
+    grid-column: 1 / 2;
+    grid-row: 4;
+}
+#calculator-keys .number-0 {
+    grid-column: 1 / 2;
+    grid-row: 5;
+}
+#calculator-keys .number-comma {
+    grid-column: 2 / 3;
+    grid-row: 5;
+}
