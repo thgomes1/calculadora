@@ -179,3 +179,5 @@ function deleteValue() {
 calculateKeyButton.addEventListener("click", calculate);
 clearButton.addEventListener("click", clearValues);
 deleteButton.addEventListener("click", deleteValue);
+
+// finished
